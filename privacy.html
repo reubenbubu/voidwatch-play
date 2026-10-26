@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOIDWATCH Privacy Policy</title>
+<!-- Privacy policy for the optional Google Drive cloud save (SPEC §11, issue #174).
+     Linked from Settings → DATA and the Google consent screen; tools/deploy.sh
+     publishes it beside the game. Self-contained: no fonts, scripts or images. -->
+<style>
+  :root { color-scheme: dark; --bg: #070d1a; --text: #d8e6f2; --muted: #8aa2b8; --cyan: #69ddd7; --line: #1d3047; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { margin: 0 0 4px; font-size: 30px; letter-spacing: 1px; }
+  h2 { margin: 36px 0 8px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--cyan); font-size: 18px; letter-spacing: .5px; }
+  .updated { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+  a { color: var(--cyan); }
+  code { font-size: 14px; color: var(--cyan); }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>VOIDWATCH Privacy Policy</h1>
+  <p class="updated">Last updated 26 October 2026</p>
+
+  <p>VOIDWATCH is a free tower defense game that runs in your web browser at <a href="https://reubenbubu.github.io/voidwatch-play/">reubenbubu.github.io/voidwatch-play</a>. This page explains what data the game uses. In short: your save stays on your device, and if you turn on cloud save, it is kept in your own Google Drive. The developer never receives it.</p>
+
+  <h2>What the game stores on your device</h2>
+  <p>The game saves your progress (cleared sectors and best results), skills, CODEX entries, briefings and settings in your browser's local storage. This data stays on your device. The game has no accounts, no analytics, no advertising and no tracking cookies, and it sends none of this data to the developer.</p>
+
+  <h2>Optional cloud save with Google Drive</h2>
+  <p>Cloud save is off unless you press <strong>SIGN IN WITH GOOGLE</strong> in Settings. When you sign in:</p>
+  <ul>
+    <li>The game asks Google for the <code>drive.appdata</code> permission only. It lets the game read and write its own hidden app folder in your Google Drive. The game cannot see, open or change any of your other Drive files.</li>
+    <li>The game keeps one file, <code>voidwatch-save.json</code>, in that hidden folder. It holds the same save data listed above: progress, bests, skills, CODEX, briefings and settings.</li>
+    <li>The game reads your Google account email address so it can show which account is connected. The email and the save file's ID are stored in your browser's local storage on that device only.</li>
+    <li>The sign-in token from Google is kept in memory only for as long as the page is open, and is never stored or sent anywhere except to Google's own servers.</li>
+  </ul>
+  <p>The game talks directly from your browser to Google. There is no VOIDWATCH server, so the developer has no access to your Google account, your email address or your save file.</p>
+
+  <h2>How Google data is used</h2>
+  <p>VOIDWATCH uses data from Google APIs only to save and load your game progress in your own Drive. It does not sell, share or transfer this data, use it for advertising, or let anyone read it. VOIDWATCH's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Services the game loads</h2>
+  <ul>
+    <li><strong>GitHub Pages</strong> hosts the game. GitHub may log basic request information such as your IP address; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+    <li><strong>Google Fonts</strong> supplies the game's fonts, so Google receives a request when the game loads; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li><strong>Google Identity Services</strong> and the <strong>Google Drive API</strong> load only if you sign in to cloud save, under the same Google Privacy Policy.</li>
+  </ul>
+
+  <h2>Removing your data</h2>
+  <ul>
+    <li><strong>Stop syncing:</strong> press <strong>SIGN OUT</strong> in Settings. This also forgets the link on that device.</li>
+    <li><strong>Remove the game's access:</strong> visit <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> and remove VOIDWATCH.</li>
+    <li><strong>Delete the cloud save:</strong> in Google Drive, open Settings → Manage apps, find VOIDWATCH and choose <em>Delete hidden app data</em>.</li>
+    <li><strong>Delete the save on a device:</strong> use <strong>RESET</strong> in the game's Settings, or clear the site's data in your browser.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>The game does not knowingly collect personal information from anyone. Cloud save is optional and needs a Google account, which follows Google's own age rules.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the new version will appear on this page with a new date. Questions or requests: open an issue at <a href="https://github.com/reubenbubu/voidwatch/issues">github.com/reubenbubu/voidwatch/issues</a>.</p>
+</main>
+</body>
+</html>
